@@ -35,6 +35,8 @@ class CLIPImageExtractor(input: Operator<Retrievable>, field: Schema.Field<Image
     /**
      * Queries the external feature API for the feature of the given content element.
      *
+     * TODO: Don't just use first content element. Use all (one descriptor each).
+     *
      * @param retrievable The [RetrievableWithContent] for which to query the external feature API.
      * @return The [List] of [Float] representing the obtained external feature.
      */
